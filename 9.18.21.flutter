@@ -1,0 +1,67 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(ImageApp() );
+  
+}
+
+class ImageApp extends StatelessWidget {
+  const ImageApp({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+
+          Container(
+            height: 500,
+            width: 500,
+            color: Colors.black,
+            child: Column(
+              children: [
+
+          SizedBox(
+          
+          child: Image.asset("assets/images/splash_image_1.png",
+          height: 400.0,width: 400.0,),
+          ),
+          
+          Text("Boost productivity",
+          style: TextStyle(
+            color: Colors.blue,
+            fontSize: 25.0,
+          ),),
+
+          Text("To load an image from a package dependency",
+          style: TextStyle(
+            color:Colors.blue,
+            fontSize: 10.0,
+
+          ),),
+
+
+          ElevatedButton(onPressed: (){},
+          
+           child: Text("Button"),
+           style: ButtonStyle(
+             backgroundColor: MaterialStateProperty.all(Colors.green),
+           ),)
+              ],
+            ),
+            
+          ),
+          
+          
+        
+            
+          ],
+        )
+
+      ),
+    );
+  }
+}
