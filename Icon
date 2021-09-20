@@ -1,0 +1,49 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main( ) {
+  runApp(AppImage());
+  
+}
+class AppImage extends StatelessWidget {
+  const AppImage({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Splash Screen"),
+        ),
+        
+        body: Center(
+        child: Container(
+          width: double.infinity,
+          color: Colors.blue,
+          child: Column(
+            children: [
+              SizedBox(
+                child: ElevatedButton(onPressed: (){}, 
+                child: Icon(Icons.access_alarm_sharp),
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.redAccent
+                ),),
+                width: 150.0,
+                height: 150.0,
+              ),
+
+              ElevatedButton(onPressed: (){}, 
+             child: Icon(Icons.access_alarm_sharp)),
+             
+             ElevatedButton(onPressed: (){}, 
+             child: Icon(Icons.access_alarm_sharp))
+
+            ],
+          ),
+        ),
+         ),
+      ),
+
+    );
+  }
+}
