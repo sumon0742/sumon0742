@@ -1,0 +1,37 @@
+void main() {
+  List<Map<String, dynamic>> myfamily = [
+    {
+      "name": "sumon",
+      "email": "sumon0742@gmail.com",
+      "age": 25,
+      "position": "test"
+    },
+    {
+      "name": "sujon",
+      "email": "sujon0742@gmail.com",
+      "age": 20,
+      "position": "test"
+    },
+    
+     {
+      "name": "Alhaz",
+      "email": "mkalhaz@gmail.com",
+      "age": 20,
+      "position": "test"
+    }
+  ];
+
+  for (int i = 0; i < myfamily.length; i++) {
+    String name = myfamily[i]["name"];
+    String email = myfamily[i]["email"];
+    int age = myfamily[i]['age'];
+    String position = myfamily[i]["position"];
+
+    print("Name: $name");
+    print("Email: $email");
+    print("Age: $age");
+    print("Position: $position");
+    print(' ');
+
+  }
+}
